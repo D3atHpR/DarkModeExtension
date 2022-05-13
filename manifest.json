@@ -1,0 +1,21 @@
+{
+    "name": "DK.io",
+    "description": "Dark mode and Light mode",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts":[
+            "popup.js"
+        ], 
+        "persistent": true
+    },
+    "browser_action": {
+        "defaut_title": "DK.io",
+        "default_popup": "popup.html"
+    },
+    "permissions":[
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}

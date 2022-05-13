@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+body{
+    min-width: 300px;
+    text-align: center;
+}
+h1{
+    font-family: 'Varela Round', sans-serif;
+}
+.green{
+    color: #088A29
+}
+.blue{
+    color: #0B0B61
+}
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+}
+.button{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+}
+.button{
+    background-color: #7401DF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 1rem;   
+    /*animation: backgroundR 1s infinite;*/
+    cursor: pointer;
+
+}
+.row {
+    padding: 0 0.25rem;
+    pointer-events: none;
+}
+.circle{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 2rem;
+    width: 2rem;
+    border-radius:50%;
+    background-color: #380B61;
+    /*animation: moveCircleRight 1s infinite;*/
+    pointer-events: none;
+
+
+}
+
+@keyframes moveCircleRight{
+    from{
+        left: 0;
+        background-color: #380B61;
+    }
+    to{
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #A901DB;
+    }
+}
+@keyframes moveCircleLeft{
+    from{
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #A901DB;
+    }
+    to{
+        left: 0;
+        background-color: #380B61;
+    }
+}
+@keyframes backgroundR{
+    from{
+        background-color: #380B61;
+    }
+    to{
+        background-color: #A901DB;
+    }
+}
+@keyframes backgroundR1{
+    from{
+        background-color: #A901DB;
+    }
+    to{
+        background-color: #380B61;
+    }
+}
+
+
+</style>
+<body class="popup">
+   <h1><span class="green">DK</span><span class="blue">.io</span></h1>
+   <p>Switch right now to dark mode and light mode in moments.</p>
+   <div class="button">
+       <div class="row">On</div>
+       <div class="row">Off</div>
+       <div class="circle"></div>
+   </div>
+</body>
+<script src = "popup.js"></script>
+</html>
